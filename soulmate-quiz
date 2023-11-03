@@ -1,0 +1,148 @@
+import java.util.*;
+import java.util.concurrent.TimeUnit;
+class Main {
+  static int points;
+  public static void main(String[] args) {
+    initial();
+  }
+public static void slowPrint(String temp)
+    {
+        for(int i = 0; i < temp.length(); i++)
+              {
+                 System.out.print(temp.substring(i,i+1));
+                try
+                  {
+                  TimeUnit.MILLISECONDS.sleep(100);
+                  }
+                  
+                catch (InterruptedException ie) 
+                  {
+                  Thread.currentThread().interrupt();
+                  }
+              }
+        System.out.println();
+    }
+  
+    ///////////////////////////////////////
+public static void addPoints(String temp)
+  {
+    if (temp.equals("A") || temp.equals("a")) {
+      points += 10;
+    } else if (temp.equals("B") || temp.equals("b")) {
+      points += 20;
+    } else if (temp.equals("C") || temp.equals("c")) {
+      points += 30;
+    } else if (temp.equals("D") || temp.equals("d")) {
+      points += 40;
+    } else {
+      points += 50;
+    }
+  }
+  public static void initial()
+  {
+  Scanner scanner = new Scanner(System.in);
+    
+    System.out.println();
+    System.out.println("---------------------------------------------------------------");
+    System.out.println();
+    slowPrint("Redirecting...");
+    slowPrint("Finding love...");
+    slowPrint("Picking roses...");
+
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    slowPrint("These questions may seem a bit random, but they will reveal the first initial of your soulmate."); 
+    System.out.println();
+    System.out.println();
+
+    System.out.println(" Q1: What is your favorite sport?");
+    System.out.println(" A) Volleyball    B) Tennis     C) Baseball");
+    System.out.println(" D) Basketball    E) Soccer     F) Hockey");
+    System.out.println();System.out.print("Enter your answer: ");
+
+  addPoints(scanner.nextLine());
+    
+
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    
+    System.out.println(" Q2: What month were you born in?");
+    System.out.println();
+    System.out.println(" A) Jan-Mar    B) Apr-Jun");
+    System.out.println(" C) Jul-Sept   D) Oct-Dec");
+    System.out.println();
+    System.out.print("Enter your answer: ");
+    addPoints(scanner.nextLine());
+    
+    System.out.println();
+    System.out.println();
+    System.out.println();
+
+    System.out.println(" Q3: Which breakfast do you like best?");
+    System.out.println();
+    System.out.println(" A) Pancakes    B) Bagels");
+    System.out.println(" C) Cereal      D) Eggs and toast");
+    System.out.println();
+    System.out.print("Enter your answer: ");
+    addPoints(scanner.nextLine());
+
+    System.out.println();
+    System.out.println();
+    System.out.println();
+
+     System.out.println(" Q4: Which adventure sport would you do?");
+    System.out.println();
+    System.out.println(" A) Sky-diving    B) Bungee Jumping");
+    System.out.println(" C) Scuba Diving      D) Spelunking");
+    System.out.println();
+    System.out.print("Enter your answer: ");
+    addPoints(scanner.nextLine());
+
+    System.out.println();
+    System.out.println();
+    System.out.println();
+
+     System.out.println(" Q5: What do you like most about people?");
+    System.out.println();
+    System.out.println(" A) Humor     B) Maturity");
+    System.out.println(" C) Honesty   D) Empathy");
+    System.out.println();
+    System.out.print("Enter your answer: ");
+    addPoints(scanner.nextLine());
+
+    System.out.println();
+    System.out.println();
+    
+    result1();
+  }
+
+public static void result1()
+  {
+    if (points >= 240)
+    {
+      System.out.println(" Your soulmate's name begins with...");
+      System.out.println();
+      System.out.println(" E, H, I, K, L");
+    }
+    else if(points >= 200)
+    {
+      System.out.println(" Your soulmate's name begins with...");
+      System.out.println();
+      System.out.println(" P, V, R, T, M");
+    }
+    else if(points >= 140)
+    {
+      System.out.println(" Your soulmate's name begins with...");
+      System.out.println();
+      System.out.println("A, S, N, O, D");
+    }
+    else if(points >= 90)
+    {
+      System.out.println(" Your soulmate's name begins with...");
+      System.out.println();
+      System.out.println("Y, I, K, J, G");
+    }
+  }
+}
