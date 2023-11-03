@@ -1,0 +1,95 @@
+
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+     Scanner reader = new Scanner(System.in);
+     int mike = 0, dustin = 0, will = 0, lucas = 0;
+ System.out.println("Find out which member of the OG party you are!");
+      System.out.println();
+      // q1
+      System.out.println("What's your favorite activity?");
+      System.out.println("A. Visit the arcade, B. Bike around the neighborhood, C. Play basketball, D. Game night with your friends");
+      String r2 = reader.nextLine();
+      if (r2.equals("A"))
+        mike++;
+      else if (r2.equals("B"))
+        dustin++;
+      else if (r2.equals("C"))
+        lucas++;
+      else if (r2.equals("D"))
+        will++;
+System.out.println();
+      // q2
+      System.out.println("What food are you currently craving?");
+      System.out.println("A. Chocolate pudding, B. PB&J Sandwich, C. Chicken fries, D. Lasagna");
+      String r3 = reader.nextLine();
+      if (r3.equals("A"))
+        dustin++;
+      else if (r3.equals("B"))
+        mike++;
+      else if (r3.equals("C"))
+        lucas++;
+      else if (r3.equals("D"))
+        will++;
+System.out.println();
+      // q3 - ehhhhh
+      System.out.println("Look out, it's a Demogorgon! What's your reaction?");
+      System.out.println("A. Grab a bat, B. Run, C. Outsmart it, D. Freeze ");
+      String r4 = reader.nextLine();
+      if (r4.equals("C"))
+        dustin++;
+      else if (r4.equals("B"))
+        mike++;
+      else if (r4.equals("A"))
+        lucas++;
+      else if (r4.equals("D"))
+        will++;
+System.out.println();
+
+      //q4
+      System.out.println("Choose an animal.");
+      System.out.println("A. Dolphin, B. Fox, C. Stag, D. Dog");
+      String r5 = reader.nextLine();
+      if (r5.equals("A"))
+        dustin++;
+      else if (r5.equals("D"))
+        mike++;
+      else if (r5.equals("B"))
+        lucas++;
+      else if (r5.equals("C"))
+        will++;
+System.out.println();
+
+      //q5
+      System.out.println("Choose a pie.");
+      System.out.println("A. Key lime, B. Pecan, C. Sweet potato, D. Blueberry");
+      String r6 = reader.nextLine();
+      if (r6.equals("C"))
+        dustin++;
+      else if (r6.equals("D"))
+        mike++;
+      else if (r6.equals("A"))
+        lucas++;
+      else if (r6.equals("B"))
+        will++;
+    System.out.println();
+      
+      int max = dustin;
+      String ret = "Dustin!";
+      if(max < mike){
+        max = mike;
+        ret = "Mike!";
+      }
+      if(max < lucas){
+        max = lucas;
+        ret = "Lucas!";
+      }
+      if(max < will){
+          max = will;
+        ret = "Will!";
+      }
+
+      System.out.println();
+      System.out.println("You're " + ret);
+  }
+}
