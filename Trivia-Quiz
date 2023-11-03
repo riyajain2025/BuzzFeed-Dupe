@@ -1,0 +1,646 @@
+import java.util.*;
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    //create a trivia quiz 
+    int highestScore = 0;
+    int score = 0;
+    int score2 = 0;
+    String name = "";
+    String name2 = "";
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Welcome to BuzzFeed's Trivia Game Dupe!");
+    System.out.println("Please type in your name");
+    String answer0 = scan.nextLine();
+    name = answer0;
+    System.out.println("Would you like to play: A). Individually or B). With another player?");
+    String answer = scan.nextLine();
+    if(answer.equals("A"))
+    {
+      System.out.println("Get ready to play!");
+      System.out.println("");
+      System.out.println("Here is your first question: ");
+    System.out.println("Where did the Olympics start?");
+    System.out.println("Here are your options:");
+    System.out.println("A: The United States of America");
+    System.out.println("B: Mesopotamia ");
+    System.out.println("C: Greece");
+    System.out.println("D: Naples");
+    System.out.println("Type in the letter that you think is the answer!");
+    String answer1 = scan.nextLine();
+    if(answer1.equals("C"))
+    {
+      System.out.println("Haha, too easy! You got it. ");
+        score++;
+    }
+    else
+    {
+      System.out.println("Nope, that's wrong.");
+    }
+    System.out.println("Next question!");
+      System.out.println("");
+      System.out.println("Which country currently has the largest population?");
+      System.out.println("Here are your options:");
+    System.out.println("A: China");
+    System.out.println("B: India");
+    System.out.println("C: Australia");
+    System.out.println("D: The United States");
+    System.out.println("Type in the letter that you think is the answer!");
+    String answer2 = scan.nextLine();
+    if(answer2.equals("B"))
+    {
+      System.out.println("Correct!");
+      score++;
+    }
+    else
+    {
+      System.out.println("Incorrect!");
+    }
+    System.out.println("Now let's go a little harder");
+      System.out.println("");
+       System.out.println("What is cynohobia?");
+    System.out.println("Here are your options:");
+    System.out.println("A: Fear of dogs");
+    System.out.println("B: Fear of cats");
+    System.out.println("C: Fear of bears");
+    System.out.println("D: Fear of birds");
+    System.out.println("Type in the letter that you think is the answer!");
+    String answer3 = scan.nextLine();
+    if(answer3.equals("A"))
+    {
+      System.out.println("Correct!");
+      score++;
+    }
+    else
+    {
+      System.out.println("Incorrect!");
+    }
+    System.out.println("");
+    System.out.println("What is the rarest blood type?");
+    System.out.println("Here are your options:");
+    System.out.println("A: O positive");
+    System.out.println("B: B positive");
+    System.out.println("C: O negative");
+    System.out.println("D: AB negative");
+    System.out.println("Type in the letter that you think is the answer!");
+    String answer4 = scan.nextLine();
+    if(answer4.equals("D"))
+    {
+      System.out.println("Correct!");
+      score++;
+    }
+    else
+    {
+      System.out.println("Incorrect!");
+    }
+      System.out.println("");
+      System.out.println("Who is the goddess of music?");
+    System.out.println("Here are your options:");
+    System.out.println("A: Zeus");
+    System.out.println("B: Hathor");
+    System.out.println("C: Athena");
+    System.out.println("D: Aphrodite");
+    System.out.println("Type in the letter that you think is the answer!");
+    String answer5 = scan.nextLine();
+    if(answer5.equals("B"))
+    {
+      System.out.println("Correct!");
+      score++;
+    }
+    else
+    {
+      System.out.println("Incorrect!");
+    }
+      System.out.println(" ");
+      System.out.println("What country were checkers invented in?");
+    System.out.println("Here are your options:");
+    System.out.println("A: Egypt");
+    System.out.println("B: Belarus");
+    System.out.println("C: Mexico");
+    System.out.println("D: Finland");
+    System.out.println("Type in the letter that you think is the answer!");
+    String answer6 = scan.nextLine();
+    if(answer6.equals("A"))
+    {
+      System.out.println("Correct!");
+      score++;
+    }
+    else
+    {
+      System.out.println("Incorrect!");
+    }
+      System.out.println("");
+      System.out.println("What is the most common M&M color?");
+    System.out.println("Here are your options:");
+    System.out.println("A: Green");
+    System.out.println("B: Brown");
+    System.out.println("C: Red");
+    System.out.println("D: Blue");
+    System.out.println("Type in the letter that you think is the answer!");
+    String answer7 = scan.nextLine();
+    if(answer7.equals("D"))
+    {
+      System.out.println("Correct!");
+      score++;
+    }
+    else
+    {
+      System.out.println("Incorrect!");
+    }
+    System.out.println(" ");
+      System.out.println("What is Dominica's capital?");
+    System.out.println("Here are your options:");
+    System.out.println("A: Castries");
+    System.out.println("B: Kingston");
+    System.out.println("C: Roseau");
+    System.out.println("D: Maseru");
+    System.out.println("Type in the letter that you think is the answer!");
+    String answer8 = scan.nextLine();
+    if(answer8.equals("C"))
+    {
+      System.out.println("Correct!");
+      score++;
+    }
+    else
+    {
+      System.out.println("Incorrect!");
+    }
+    System.out.println("");
+      System.out.println(" Which company owns Lamborghini, Ducati, Porsche, Audi and Bugatti?");
+    System.out.println("Here are your options:");
+    System.out.println("A: Hyundai");
+    System.out.println("B: BMW ");
+    System.out.println("C: Volkswagen");
+    System.out.println("D: Ford");
+    System.out.println("Type in the letter that you think is the answer!");
+    String answer9 = scan.nextLine();
+    if(answer9.equals("C"))
+    {
+      System.out.println("Correct!");
+      score++;
+    }
+    else
+    {
+      System.out.println("Incorrect!");
+    }
+    System.out.println("");
+      System.out.println("Paddington Bear is native to which country?");
+    System.out.println("Here are your options:");
+    System.out.println("A: Peru");
+    System.out.println("B: Antarctica ");
+    System.out.println("C: Argentina");
+    System.out.println("D: New Zealand");
+    System.out.println("Type in the letter that you think is the answer!");
+    String answer10 = scan.nextLine();
+    if(answer10.equals("A"))
+    {
+      System.out.println("Correct!");
+      score++;
+    }
+    else
+    {
+      System.out.println("Incorrect!");
+    }
+     if(score > highestScore) 
+     {
+       highestScore = score;
+       System.out.println("You have the highest score of: " + score);
+       
+     }
+      
+      
+
+    }
+    else //this is for 2 player game
+    {
+      System.out.println("Player 2, please type in your name");
+      String answer2 = scan.nextLine();
+      name2 = answer2;
+      System.out.println("");
+      System.out.println("Great! Here's how it's going to go: I will pose a question to you and Player 1 will answer first. Then, player 2 will put in their answer for the same question. I will tell you whoever gets it right. At the end, I will tally up the scores and declare the winner!");
+       System.out.println("Here is your first question: ");
+      System.out.println("");
+    System.out.println("What is the unit of currency in Laos?");
+    System.out.println("Here are your options:");
+    System.out.println("A: Kip");
+    System.out.println("B: Dirhams ");
+    System.out.println("C: Rai stones ");
+    System.out.println("D: Rupiah");
+      System.out.println(" ");
+    System.out.println(name + ": Type in the letter that you think is the answer!");
+    String answer11 = scan.nextLine();
+      System.out.println(" ");
+      System.out.println(name2 + ": Type in the letter that you think is the answer!");
+      String answer12 = scan.nextLine();
+    if(answer11.equals("A"))
+    {
+      score++;
+      System.out.println(" ");
+      System.out.println(name + ", you got it right!");
+    }
+      else{
+        System.out.println(" ");
+        System.out.println(name + ", you got it wrong.");
+      }
+    if(answer12.equals("A"))
+    {
+      System.out.println(" ");
+      score2++;
+      System.out.println(name2 + ", you got it right!");
+    }
+      else
+    {
+      System.out.println(" ");
+      System.out.println(name2 + ", you got it wrong.");
+    }
+      if(!(answer11.equals("A") && answer12.equals("A")))
+         {
+      System.out.println(" ");
+           
+        System.out.println("The correct answer is A.");
+         }
+    System.out.println("");
+       System.out.println("In what year was McDonald's founded?");
+    System.out.println("Here are your options:");
+    System.out.println("A: 1993");
+    System.out.println("B: 1998");
+    System.out.println("C: 1995");
+    System.out.println("D: 1996");
+      System.out.println(" ");
+    System.out.println(name + ": Type in the letter that you think is the answer!");
+    String answer13 = scan.nextLine();
+      System.out.println(" ");
+      System.out.println(name2 + ": Type in the letter that you think is the answer!");
+      String answer14 = scan.nextLine();
+    if(answer13.equals("C"))
+    {
+      System.out.println(" ");
+      score++;
+      System.out.println(name + ", you got it right!");
+    }
+      else{
+        System.out.println(" ");
+        System.out.println(name + ", you got it wrong.");
+      }
+    if(answer14.equals("C"))
+    {
+      System.out.println(" ");
+      score2++;
+      System.out.println(name2 + ", you got it right!");
+    }
+      else
+    {
+      System.out.println(" ");
+      System.out.println(name2 + ", you got it wrong.");
+    }
+       if(!(answer13.equals("C") && answer14.equals("C")))
+         {
+      System.out.println(" ");
+           
+        System.out.println("The correct answer is C.");
+         }
+       System.out.println("");
+      System.out.println("Nephelococcygia is the practice of doing what?");
+    System.out.println("Here are your options:");
+    System.out.println("A: Finding shapes in sand ");
+    System.out.println("B: Finding shapes in clouds");
+    System.out.println("C: Finding shapes in sky ");
+    System.out.println("D: The treatment of the coccyx");
+      System.out.println(" ");
+    System.out.println(name + ": Type in the letter that you think is the answer!");
+    String answer15 = scan.nextLine();
+      System.out.println(" ");
+      System.out.println(name2 + ": Type in the letter that you think is the answer!");
+      String answer16 = scan.nextLine();
+    if(answer15.equals("B"))
+    {
+      System.out.println(" ");
+      score++;
+      System.out.println(name + ", you got it right!");
+    }
+      else{
+        System.out.println(" ");
+        System.out.println(name + ", you got it wrong.");
+      }
+    if(answer16.equals("B"))
+    {
+      System.out.println(" ");
+      score2++;
+      System.out.println(name2 + ", you got it right!");
+    }
+      else
+    {
+      System.out.println(" ");
+      System.out.println(name2 + ", you got it wrong.");
+    }
+       if(!(answer15.equals("B") && answer16.equals("B")))
+         {
+      System.out.println(" ");
+           
+        System.out.println("The correct answer is B.");
+         }
+     System.out.println("");
+      System.out.println("What is the perfect score in a game of ten pin bowling?");
+    System.out.println("Here are your options:");
+    System.out.println("A: 350");
+    System.out.println("B: 450");
+    System.out.println("C: 400 ");
+    System.out.println("D: 300");
+      System.out.println(" ");
+    System.out.println(name + ": Type in the letter that you think is the answer!");
+    String answer17 = scan.nextLine();
+      System.out.println(" ");
+      System.out.println(name2 + ": Type in the letter that you think is the answer!");
+      String answer18 = scan.nextLine();
+    if(answer17.equals("D"))
+    {
+      System.out.println(" ");
+      score++;
+      System.out.println(name + ", you got it right!");
+    }
+      else{
+        System.out.println(" ");
+        System.out.println(name + ", you got it wrong.");
+      }
+    if(answer18.equals("D"))
+    {
+      System.out.println(" ");
+      score2++;
+      System.out.println(name2 + ", you got it right!");
+    }
+      else
+    {
+      System.out.println(" ");
+      System.out.println(name2 + ", you got it wrong.");
+    }
+       if(!(answer17.equals("D") && answer18.equals("D")))
+         {
+      System.out.println(" ");
+           
+        System.out.println("The correct answer is D.");
+         }
+
+       System.out.println("");
+      System.out.println("Who claimed he could drive away the devil with a fart?");
+    System.out.println("Here are your options:");
+    System.out.println("A: Mahatma Gandhi");
+    System.out.println("B: Martin Luther King Jr. ");
+    System.out.println("C: Nelson Mandela");
+    System.out.println("D: Jesus");
+      System.out.println(" ");
+    System.out.println(name + ": Type in the letter that you think is the answer!");
+    String answer19 = scan.nextLine();
+      System.out.println(" ");
+      System.out.println(name2 + ": Type in the letter that you think is the answer!");
+      String answer20 = scan.nextLine();
+    if(answer19.equals("B"))
+    {
+      System.out.println(" ");
+      score++;
+      System.out.println(name + ", you got it right!");
+    }
+      else{
+        System.out.println(" ");
+        System.out.println(name + ", you got it wrong.");
+      }
+    if(answer20.equals("B"))
+    {
+      System.out.println(" ");
+      score2++;
+      System.out.println(name2 + ", you got it right!");
+    }
+      else
+    {
+      System.out.println(" ");
+      System.out.println(name2 + ", you got it wrong.");
+    }
+       if(!(answer19.equals("B") && answer20.equals("B")))
+         {
+      System.out.println(" ");
+           
+        System.out.println("The correct answer is B.");
+         }
+       System.out.println("");
+      System.out.println("What do you call a group of unicorns?");
+    System.out.println("Here are your options:");
+    System.out.println("A: Flock");
+    System.out.println("B: Drove");
+    System.out.println("C: Blessing");
+    System.out.println("D: Pandemonium");
+      System.out.println(" ");
+    System.out.println(name + ": Type in the letter that you think is the answer!");
+    String answer21 = scan.nextLine();
+      System.out.println(" ");
+      System.out.println(name2 + ": Type in the letter that you think is the answer!");
+      String answer22 = scan.nextLine();
+    if(answer21.equals("C"))
+    {
+      System.out.println(" ");
+      score++;
+      System.out.println(name + ", you got it right!");
+    }
+      else{
+        System.out.println(" ");
+        System.out.println(name + ", You got it wrong.");
+      }
+    if(answer22.equals("C"))
+    {
+      System.out.println(" ");
+      score2++;
+      System.out.println(name2 + ", you got it right!");
+    }
+      else
+    {
+      System.out.println(" ");
+      System.out.println(name2 + ", you got it wrong.");
+    }
+       if(!(answer21.equals("C") && answer22.equals("C")))
+         {
+      System.out.println(" ");
+           
+        System.out.println("The correct answer is C.");
+         }
+       System.out.println("");
+      System.out.println("What animal cannot stick out it's tongue?");
+    System.out.println("Here are your options:");
+    System.out.println("A: Alligator");
+    System.out.println("B: Emu");
+    System.out.println("C: Lemur");
+    System.out.println("D: Crocodiles");
+      System.out.println(" ");
+    System.out.println(name + ": Type in the letter that you think is the answer!");
+      System.out.println(" ");
+    String answer23 = scan.nextLine();
+      System.out.println(" ");
+      System.out.println(name2 + ": Type in the letter that you think is the answer!");
+      String answer24 = scan.nextLine();
+    if(answer23.equals("D"))
+    {
+      System.out.println(" ");
+      score++;
+      System.out.println(name + ", you got it right!");
+    }
+      else{
+        System.out.println(" ");
+        System.out.println(name + ", You got it wrong.");
+      }
+    if(answer24.equals("D"))
+    {
+      System.out.println(" ");
+      score2++;
+      System.out.println(name2 + ", you got it right!");
+    }
+      else
+    {
+      System.out.println(" ");
+      System.out.println(name2 + ", you got it wrong.");
+    }
+       if(!(answer23.equals("D") && answer24.equals("D")))
+         {
+      System.out.println(" ");
+           
+        System.out.println("The correct answer is D.");
+         }
+       System.out.println("");
+      System.out.println("What was Walt Disney afraid of?");
+    System.out.println("Here are your options:");
+    System.out.println("A: Mice");
+    System.out.println("B: Pigs ");
+    System.out.println("C: his mother");
+    System.out.println("D: Ducks");
+      System.out.println(" ");
+    System.out.println(name + ": Type in the letter that you think is the answer!");
+    String answer25 = scan.nextLine();
+      System.out.println(" ");
+      System.out.println(name2 + ": Type in the letter that you think is the answer!");
+      String answer26 = scan.nextLine();
+    if(answer25.equals("A"))
+    {
+      System.out.println(" ");
+      score++;
+      System.out.println(name + ", you got it right!");
+    }
+      else{
+        System.out.println(" ");
+        System.out.println(name + ", You got it wrong.");
+      }
+    if(answer26.equals("A"))
+    {
+      System.out.println(" ");
+      score2++;
+      System.out.println(name2 + ", you got it right!");
+    }
+      else
+    {
+      System.out.println(" ");
+      System.out.println(name2 + ", you got it wrong.");
+    }
+       if(!(answer25.equals("A") && answer26.equals("A")))
+         {
+      System.out.println(" ");
+           
+        System.out.println("The correct answer is A.");
+         }
+
+       System.out.println("");
+      System.out.println("Where do kiwi fruits originally come from?");
+    System.out.println("Here are your options:");
+    System.out.println("A: Russia ");
+    System.out.println("B: China ");
+    System.out.println("C: Malaysia");
+    System.out.println("D: India");
+      System.out.println(" ");
+    System.out.println(name + ": Type in the letter that you think is the answer!");
+    String answer27 = scan.nextLine();
+      System.out.println(" ");
+      System.out.println(name2 + ": Type in the letter that you think is the answer!");
+      String answer28 = scan.nextLine();
+    if(answer27.equals("B"))
+    {
+      score++;
+      System.out.println(" ");
+      System.out.println(name + ", you got it right!");
+    }
+      else{
+        
+        System.out.println(" ");
+        System.out.println(name + ", You got it wrong.");
+      }
+    if(answer28.equals("B"))
+    {
+      
+      score2++;
+      System.out.println(" ");
+      System.out.println(name2 + ", you got it right!");
+    }
+      else
+    {
+      System.out.println(" ");
+      System.out.println(name2 + ", you got it wrong.");
+    }
+       if(!(answer27.equals("B") && answer28.equals("B")))
+         {
+      System.out.println(" ");
+           
+        System.out.println("The correct answer is B.");
+         }
+       System.out.println("");
+      System.out.println("On average, what is the thing that Americans do 22 times a day?");
+    System.out.println("Here are your options:");
+    System.out.println("A: Opening the fridge");
+    System.out.println("B: Going to the bathroom");
+    System.out.println("C: Turning on their phone");
+    System.out.println("D: Sleeping");
+      System.out.println(" ");
+    System.out.println(name + ": Type in the letter that you think is the answer!");
+    String answer29 = scan.nextLine();
+      System.out.println(" ");
+      System.out.println(name2 + ": Type in the letter that you think is the answer!");
+      String answer30 = scan.nextLine();
+    if(answer29.equals("A"))
+    {
+      score++;
+      System.out.println(name + ", you got it right!");
+    }
+      else{
+        System.out.println(name + ", You got it wrong.");
+      }
+    if(answer30.equals("A"))
+    {
+      score2++;
+      System.out.println(" ");
+      System.out.println(name2 + ", you got it right!");
+    }
+      else
+    {
+      System.out.println(" ");
+      System.out.println(name2 + ", you got it wrong.");
+    }
+       if(!(answer29.equals("A") && answer30.equals("A")))
+         {
+      System.out.println(" ");
+           
+        System.out.println("The correct answer is A.");
+         }
+
+      if(score > score2)
+      {
+        System.out.println(name + " has won the game with a score of: " + score);
+      }
+      else if(score < score2)
+      {
+        System.out.println(name2 + " has won the game with a score of: " + score2);
+      }
+      else if(score == score2)
+      {
+        System.out.println("Both players have won the game with a tie of: " + score);
+      }
+      
+    
+    }
+  System.out.println("Thank you for playing our trivia game!");
+
+    
+    
+  }
+}
